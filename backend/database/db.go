@@ -12,7 +12,7 @@ var DB *gorm.DB
 
 
 func InitDB() *gorm.DB {
-	dsn := "host=127.0.0.1 port=5433 dbname=warehouse user=postgres password=postgres connect_timeout=10 sslmode=prefer"
+	dsn := "host=127.0.0.1 port=5434 dbname=warehouse user=postgres password=postgres connect_timeout=10 sslmode=prefer"
 
 	var err error
 	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
